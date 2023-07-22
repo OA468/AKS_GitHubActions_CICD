@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"; content="text/html"> 
+  <title>AKS NodeJS Starter</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div style="margin-top:50px">
+      <div class="panel panel-info">
+        <div class="text-center">
+          <h3 class="panel-title">Basic Nodejs Application on AKS</h3>
+        </div>
+        <div class="panel-body">
+          <div class="alert alert-success">
+            <p class="text-center">
+              Basic App to demonstrate the process of automatically deploying containers on Kubernetes</p>
+          </div>
+          <div class="text-center">
+            <img src="man-superhero-emoji-clipart-md.png" alt="superhero-logo" />
+          </div>
+          <div class="text-center">
+            <div class="text-center">
+              <a id="year-link" href="#">Current Year</a>
+            </div>
+          </div>
+          
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function() {
+              // Get the current year
+              var currentYear = new Date().getFullYear();
+              
+              // Update the href attribute with the current year
+              $("#year-link").attr("href", "#" + currentYear);
+              $("#year-link").text(currentYear); // Optional: Update the link text to display the current year
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
